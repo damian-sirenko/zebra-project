@@ -6,28 +6,28 @@
 */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./header_main.css');
+@import url('./header-main.css');
 @import url('./header.css');
-@import url('./mob_menu.css');
-@import url('./main_page.css');
+@import url('./mob-menu.css');
+@import url('./main-page.css');
 @import url('./about_us.css');
-@import url('./price_list.css');
-@import url('./price_list_hair.css');
-@import url('./price_list_hands.css');
-@import url('./price_list_feets.css');
+@import url('./price-list.css');
+@import url('./price-list-hair.css');
+@import url('./price-list-hands.css');
+@import url('./price-ist-feets.css');
 @import url('./regulations.css');
 @import url('./blog.css');
 @import url('./promotions.css');
 @import url('./gallery.css');
 @import url('./portfolio.css');
-@import url('./salon_inside.css');
+@import url('./salon-inside.css');
 @import url('./contacts.css');
 @import url('./footer.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   font-weight: 400;
 
   color: #242424;
