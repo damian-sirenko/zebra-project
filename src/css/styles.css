@@ -5,8 +5,24 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./base.css');
+@import url('./header_main.css');
 @import url('./header.css');
+@import url('./mob_menu.css');
+@import url('./main_page.css');
+@import url('./about_us.css');
+@import url('./price_list.css');
+@import url('./price_list_hair.css');
+@import url('./price_list_hands.css');
+@import url('./price_list_feets.css');
+@import url('./regulations.css');
+@import url('./blog.css');
+@import url('./promotions.css');
+@import url('./gallery.css');
+@import url('./portfolio.css');
+@import url('./salon_inside.css');
+@import url('./contacts.css');
+@import url('./footer.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
