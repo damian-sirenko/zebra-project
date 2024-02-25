@@ -1,27 +1,40 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #2c2c2c;
-  max-width: 1440px;
+  color: #515151;
+  /* max-width: 1440px; */
   margin: 0 auto;
 }
 
 .container {
-  max-width: 320px;
-  padding: 0 15px;
+  max-width: none;
+  padding: 0 16px;
   margin: 0 auto;
+
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-	 padding: 0 32px;
+    max-width: none;
+    padding: 0 32px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1280px;
-	 padding: 0 16px;
+    max-width: 1200px;
+    padding: 0 16px;
   }
 }
 
