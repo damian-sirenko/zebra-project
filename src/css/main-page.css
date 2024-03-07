@@ -44,16 +44,18 @@
   padding: 0 30px;
   margin: 0 auto 60px auto;
 }
+
 .hero-button {
   display: block;
-  width: 220px;
-  padding: 10px 20px;
+  width: 280px;
+  padding: 15px 30px;
   background-color: rgba(173, 36, 131, 0.7);
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 8px;
   color: #fff;
   margin: 0 auto;
   text-align: center;
+  text-transform: uppercase;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 350ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,7 +65,7 @@
 .hero-button:focus {
   background-color: rgba(255, 255, 255, 0.8);
   color: #ad2483;
-  border: 1px solid #ad2483;
+  border: 2px solid #ad2483;
 }
 
 .hero-video {
@@ -107,7 +109,7 @@
   }
 
   .hero-button {
-    width: 260px;
+    width: 280px;
     font-size: 18px;
     font-weight: 600;
   }
@@ -129,6 +131,7 @@
 }
 
 .introducing-wrap {
+  margin-bottom: 80px;
 }
 
 .introducing-text {
@@ -143,6 +146,36 @@
   width: 100%;
   margin-top: 40px;
   border-radius: 8px;
+}
+
+.introducing-button {
+  width: 280px;
+}
+
+.button {
+  display: block;
+
+  padding: 15px 30px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: transparent;
+  border: 2px solid #ad2483;
+  border-radius: 8px;
+  color: #ad2483;
+
+  text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  color: #fff;
+  background-color: #ad2483;
+  border:  2px solid #fff;
 }
 
 /* ----- Tablet -----------  */
@@ -184,8 +217,9 @@
   }
 
   .indroducing-text-wrapper {
-	display: flex;flex-direction: column;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .introducing-img {
