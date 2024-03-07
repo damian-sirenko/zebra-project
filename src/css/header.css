@@ -189,6 +189,9 @@
 }
 
 .mob-nav-link {
+  display: block;
+  width: 100%;
+  height: 100%;
   padding: 5px 11px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -226,23 +229,29 @@
 .mob-icon-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 8px;
 }
 
-.soc-icons-link {
+.soc-icon-item {
+}
+
+.soc-icon-link {
   fill: #fff;
+  height: 100%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-icons-link:hover,
-.soc-icons-link:focus {
+.soc-icon-link:hover,
+.soc-icon-link:focus {
   fill: #d8d8d8;
 }
 
 .booksy-link {
   display: block;
+  text-align: center;
+  width: 100%;
   margin: 0 auto;
-  height: 100%;
 }
 
 .booksy-link:hover,
@@ -367,7 +376,8 @@
   .open-mob-menu-btn {
     display: none;
   }
-  .mob-menu-icon {
+  .mob-menu {
+    display: none;
   }
 }
 /* -----Desktop 1158px -----------  */
