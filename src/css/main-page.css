@@ -112,3 +112,85 @@
     font-weight: 600;
   }
 }
+
+/* ====================== INTRODUCING ================== */
+
+.container-introducing {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 30px 0 30px;
+  font-size: 22px;
+  color: #ad2483;
+  line-height: 1.5;
+}
+
+.introducing-wrap {
+}
+
+.introducing-text {
+  margin: 0;
+  text-align: justify;
+  font-size: 14px;
+  text-indent: 5%;
+  margin-bottom: 10px;
+}
+
+.introducing-img {
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+/* ----- Tablet -----------  */
+
+@media only screen and (min-width: 768px) {
+  .container-introducing {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .title {
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
+
+  .introducing-text {
+    font-size: 16px;
+  }
+}
+
+/* ----- Desktop 1200 px -----------  */
+
+@media only screen and (min-width: 1200px) {
+  .container-introducing {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .title {
+    margin-bottom: 80px;
+    padding: 0 50px 0 50px;
+    font-size: 32px;
+  }
+
+  .introducing-wrap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .indroducing-text-wrapper {
+	display: flex;flex-direction: column;
+	justify-content: center;
+  }
+
+  .introducing-img {
+    margin-top: 0;
+    max-width: 542px;
+    height: 392px;
+  }
+}
