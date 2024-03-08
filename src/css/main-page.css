@@ -47,7 +47,7 @@
 
 .hero-button {
   display: block;
-  width: 280px;
+  max-width: 260px;
   padding: 15px 30px;
   background-color: rgba(173, 36, 131, 0.7);
   border: 2px solid #fff;
@@ -109,25 +109,30 @@
   }
 
   .hero-button {
-    width: 280px;
+    max-width: 280px;
     font-size: 18px;
     font-weight: 600;
   }
 }
 
 /* ====================== INTRODUCING ================== */
-
-.container-introducing {
-  padding-top: 80px;
+.introducing-section {
+}
+.section-container {
   padding-bottom: 80px;
+  padding-top: 80px;
 }
 .title {
   text-align: center;
   margin-bottom: 40px;
   padding: 0 30px 0 30px;
-  font-size: 22px;
+  font-size: 26px;
   color: #ad2483;
   line-height: 1.5;
+}
+
+.title-white {
+  color: #fff;
 }
 
 .introducing-wrap {
@@ -149,22 +154,20 @@
 }
 
 .introducing-button {
-  width: 280px;
 }
 
 .button {
   display: block;
-
   padding: 15px 30px;
   margin: 0 auto;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
+  max-width: 260px;
   background-color: transparent;
   border: 2px solid #ad2483;
   border-radius: 8px;
   color: #ad2483;
-
   text-align: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -175,19 +178,22 @@
 .button:focus {
   color: #fff;
   background-color: #ad2483;
-  border:  2px solid #fff;
+  border: 2px solid #fff;
 }
 
 /* ----- Tablet -----------  */
 
 @media only screen and (min-width: 768px) {
-  .container-introducing {
-    padding-top: 120px;
-    padding-bottom: 120px;
+  .introducing-section {
+  }
+
+  .section-container {
+    padding-bottom: 100px;
+    padding-top: 100px;
   }
   .title {
     margin-bottom: 50px;
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .introducing-text {
@@ -198,15 +204,18 @@
 /* ----- Desktop 1200 px -----------  */
 
 @media only screen and (min-width: 1200px) {
-  .container-introducing {
-    padding-top: 150px;
-    padding-bottom: 150px;
+  .introducing-section {
+  }
+
+  .section-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .title {
     margin-bottom: 80px;
     padding: 0 50px 0 50px;
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .introducing-wrap {
@@ -227,4 +236,113 @@
     max-width: 542px;
     height: 392px;
   }
+}
+
+/* =============== OFFERING ================= */
+
+.offering-section {
+  background-color: #ad2483;
+}
+
+.offering-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px 40px;
+}
+
+.offering-item:hover .offering-item-cover {
+  transform: translateY(0%);
+}
+
+.offering-item {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  flex-direction: column;
+  height: 100%;
+  max-width: 340px;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  background-color: rgba(248, 245, 245, 0.9);
+}
+
+.offering-item-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.offering-item-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  padding: 60px 32px;
+  top: 0;
+  font-weight: 500;
+  height: 100%;
+  max-width: 100%;
+  background: rgba(232, 233, 230, 0.9);
+  transform: translateY(100%);
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-cover-text {
+  font-size: 14px;
+}
+
+.item-cover-link {
+  display: block;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 10px 20px;
+  text-align: center;
+  color: #ad2483;
+  border: 2px solid #ad2483;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-cover-link:hover,
+.item-cover-link:focus {
+  color: #fff;
+  background-color: #ad2483;
+  border: 2px solid transparent;
+}
+
+.offering-img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.offering-subtitle {
+  display: block;
+  position: absolute;
+  top: 70%;
+  padding: 10px 30px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ----- Tablet-----------  */
+
+@media only screen and (min-width: 768px) {
+  .offering-container {
+	/* max-width: 776px ; */
+  }
+
+  .offering-list {
+    justify-content: center;
+    align-items: center;
+	 flex-wrap: nowrap;
+  }
+
+
 }
