@@ -122,9 +122,12 @@
   padding-bottom: 80px;
   padding-top: 80px;
 }
+
+/* TITLE */
+
 .title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom:60px;
   padding: 0 30px 0 30px;
   font-size: 26px;
   color: #ad2483;
@@ -192,7 +195,7 @@
     padding-top: 100px;
   }
   .title {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     font-size: 32px;
   }
 
@@ -213,7 +216,7 @@
   }
 
   .title {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     padding: 0 50px 0 50px;
     font-size: 36px;
   }
@@ -334,15 +337,67 @@
 /* ----- Tablet-----------  */
 
 @media only screen and (min-width: 768px) {
-  .offering-container {
-	/* max-width: 776px ; */
-  }
-
   .offering-list {
     justify-content: center;
     align-items: center;
-	 flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+}
+
+/* ============== Why We ====================== */
+
+.whywe-section {
+}
+.container {
+}
+.section-container {
+}
+.title {
+}
+
+.whywe-list {
+}
+
+.whywe-item {
+  padding-bottom: 80px;
+  width: 100%;
+}
+.whywe-img {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.whywe-subtitle {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 30px 20px 30px;
+}
+.whywe-text {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+/* ----- Tablet-----------  */
+
+@media only screen and (min-width: 768px) {
+  .whywe-list {
+    display: flex;
+    flex-wrap: wrap;
   }
 
+  .whywe-item {
+    margin: 0 auto;
+    width: calc((100% - 20px) / 2);
+  }
+}
 
+/* ----- Display-----------  */
+
+@media only screen and (min-width: 1200px) {
+
+  .whywe-item {
+    width: calc((100% - 20px) / 3);
+  }
 }
